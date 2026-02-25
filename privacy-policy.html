@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | TrueCode/OpenOBD Chrome Extension</title>
+  <meta name="description" content="Privacy Policy for the TrueCode/OpenOBD Chrome Extension" />
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --fg: #1f2937;
+      --muted: #4b5563;
+      --card: #f9fafb;
+      --border: #e5e7eb;
+      --link: #0f766e;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1020;
+        --fg: #e5e7eb;
+        --muted: #9ca3af;
+        --card: #111827;
+        --border: #1f2937;
+        --link: #2dd4bf;
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 20px 48px;
+    }
+
+    h1, h2 {
+      line-height: 1.25;
+      margin-top: 1.4em;
+      margin-bottom: 0.5em;
+    }
+
+    h1 { margin-top: 0; }
+
+    p, li { color: var(--fg); }
+
+    .muted { color: var(--muted); }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin: 12px 0;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      background: rgba(127,127,127,0.15);
+      padding: 0.1em 0.35em;
+      border-radius: 4px;
+    }
+
+    ul, ol {
+      padding-left: 1.25rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Privacy Policy for TrueCode/OpenOBD Chrome Extension</h1>
+    <p class="muted"><strong>Effective date:</strong> 25 February 2026</p>
+    <p>
+      This Privacy Policy describes how the <strong>TrueCode/OpenOBD Chrome Extension</strong>
+      (the "Extension") handles information.
+    </p>
+
+    <h2>Summary</h2>
+    <ul>
+      <li>The Extension is intended for use on <code>https://partner.jifeline.com/portal/*</code>.</li>
+      <li>The Extension <strong>does not collect, sell, or share personal data</strong> for advertising or analytics.</li>
+      <li>The Extension stores only limited data in Chrome local extension storage that is necessary for functionality.</li>
+    </ul>
+
+    <h2>What the Extension Accesses</h2>
+    <p>The Extension accesses:</p>
+    <ol>
+      <li><strong>Jifeline portal pages</strong> (<code>https://partner.jifeline.com/portal/*</code>) to provide the TrueCodeOnline workflow UI in-page.</li>
+      <li><strong>TrueCode/OpenOBD API</strong> (<code>https://oscatruecode-b7fadvgcedcjemc7.ukwest-01.azurewebsites.net/*</code>) to fetch brands/workflows and start workflows.</li>
+      <li><strong>Microsoft identity flow</strong> (via Chrome <code>identity</code> API) to sign users in and obtain an access token.</li>
+    </ol>
+
+    <h2>Data Stored Locally</h2>
+    <p>The Extension may store the following in <code>chrome.storage.local</code>:</p>
+    <ul>
+      <li><code>entraToken</code> (authentication token)</li>
+      <li><code>entraTokenExpiresAt</code> (token expiry time)</li>
+      <li>Optional partner API credentials if configured by the user:
+        <ul>
+          <li><code>partnerClientId</code></li>
+          <li><code>partnerClientSecret</code></li>
+        </ul>
+      </li>
+    </ul>
+    <p>This data is stored <strong>locally in the user’s browser</strong> and used only to operate extension features.</p>
+
+    <h2>Data Sharing and Transfer</h2>
+    <p>The Extension sends data only as required to perform its core function:</p>
+    <ul>
+      <li>To Microsoft identity endpoints during sign-in.</li>
+      <li>To the configured TrueCode/OpenOBD API endpoint.</li>
+      <li>To Partner/Jifeline API endpoints when resolving ticket/make information.</li>
+    </ul>
+    <p>The Extension does <strong>not</strong>:</p>
+    <ul>
+      <li>sell user data,</li>
+      <li>use data for advertising,</li>
+      <li>run third-party analytics or tracking scripts.</li>
+    </ul>
+
+    <h2>Retention</h2>
+    <p>
+      Locally stored authentication data remains until it expires, is cleared, or the Extension is removed.
+      Users can clear this data by removing extension storage entries or uninstalling the Extension.
+    </p>
+
+    <h2>Security</h2>
+    <p>
+      Reasonable measures are used to limit data use to required extension operations.
+      However, no method of transmission or storage is completely secure.
+    </p>
+
+    <h2>Children’s Privacy</h2>
+    <p>The Extension is not directed to children.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>
+      This Privacy Policy may be updated from time to time.
+      Material changes will be reflected by updating the effective date above.
+    </p>
+
+    <h2>Contact</h2>
+    <p>For privacy questions, contact: <strong>enquiries@osca.online</strong></p>
+  </main>
+</body>
+</html>
